@@ -1,18 +1,8 @@
 <?php
+ini_set('display_errors',1);
+ini_set('display_startup_errors',1);
 
-$ip = $_SERVER['REMOTE_ADDR'];
-$cityName = "https://ipapi.co/$ip/city/";
-$ipA = "https://ipapi.co/$ip/ip/";
-$latitude = "https://ipapi.co/$ip/latitude/";
-$longitude = "https://ipapi.co/$ip/longitude/";
-$country_name = "https://ipapi.co/$ip/country_name/";
-$region = "https://ipapi.co/$ip/region/";
-
-$cityName = file_get_contents($cityName);
-$ipA = file_get_contents($ipA);
-$gps = "latitude: ".file_get_contents($latitude)." "."longitude: ".file_get_contents($longitude);
-$country_name = file_get_contents($country_name);
-$region = file_get_contents($region);
+include_once "api/details.php";
 ?>
 <!DOCTYPE html>
 <html lang="sk">

@@ -258,7 +258,7 @@ input[type="search"] {
 select[name="table_length"] {
     background-color : #d1d1d1!important;
 }
-#table_length,#table_filter{
+.table_length,.table_filter{
     padding-top: 20px;
     padding-bottom: 20px;
     font-weight: bold;
@@ -277,7 +277,7 @@ thead{
 .not-left{
     background-color: #3D1223;
 }
-#table_modal{
+.table_modal{
     color: white;
     width: 100%;
 }
@@ -321,7 +321,7 @@ input[type=checkbox]
     border: #E0E0E0 1px solid;
     padding: 20px 40px 40px 40px;
     border-radius: 2px;
-    width: 550px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -344,6 +344,9 @@ span.min-temperature {
 
 .time {
     line-height: 25px;
+}
+.country:hover{
+    cursor: pointer;
 }
 
 

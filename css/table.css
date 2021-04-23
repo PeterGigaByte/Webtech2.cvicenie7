@@ -24,7 +24,7 @@ table, th, td {
     box-shadow: 0 2px 2px -2px #0E1119;
 }
 
-#table {
+.table {
     color: white;
     text-align: left;
     overflow: hidden;
@@ -32,7 +32,7 @@ table, th, td {
     margin: 0 auto;
     display: table;
 }
-#table2 {
+.table2 {
     color: white;
     text-align: left;
     overflow: hidden;
@@ -111,6 +111,7 @@ th{
     border-radius: 10px;
 }
 tr{
+    color: white;
     text-align: center;
 }
 
