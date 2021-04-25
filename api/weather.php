@@ -6,7 +6,11 @@ $site = "index";
 $apiKey = "b8c909bee77c78576a5f1f5802cc5a8a";
 $ip = $_SERVER['REMOTE_ADDR'];
 $json = json_decode(downloadPage($ip));
+
 $city = $json->city;
+if($city==null){
+    $city=$json->regionName;
+}
 $googleApiUrl = "http://api.openweathermap.org/data/2.5/weather?q=" . $city . "&lang=en&units=metric&APPID=" . $apiKey;
 
 $ch = curl_init();

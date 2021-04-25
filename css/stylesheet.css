@@ -349,4 +349,7 @@ span.min-temperature {
     cursor: pointer;
 }
 
+#map {
+ height: 180px;
+}
 

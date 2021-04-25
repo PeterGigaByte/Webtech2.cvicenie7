@@ -10,15 +10,18 @@
     <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.2.14/dist/jBox.all.min.js"></script>
     <link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.2.14/dist/jBox.all.min.css" rel="stylesheet">
-    <script src="js/javascript.js"></script>
+    <script src="js/leaflet.js"></script>
     <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/leaflet.css">
     <link rel="stylesheet" href="css/table.css">
     <link rel="icon" href="images/icon.png">
+    <script src="js/cookies.js"></script>
+    <script src="js/cook.js"></script>
 
 </head>
 <body>
 <?php
-include_once "api/history.php";
+    include_once "api/history.php";
 ?>
 <header>
     <nav class="navbar navbar-dark bg-dark">
@@ -133,12 +136,18 @@ include_once "api/history.php";
                 </tbody>
             </table>
         </div>
-
-
     </main>
 
+
 </div>
-<div style="height: 50px"></div>
+<div id="mapid" style="   position: relative; /* or absolute */
+  margin-top:10px;left:10%;width: 80%; height: 400px;"></div>
+<script src="js/javascript.js"></script>
+<script>
+    addAllMarks();
+</script>
+
+<div style="height: 30px"></div>
 <footer class="footer">
     ©PeterRigoDevelopment
 </footer>

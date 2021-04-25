@@ -19,7 +19,7 @@ $result = mysqli_query($db, $town_visits_query);
 $town_visits = mysqli_fetch_all($result);
 echo "<table style='background-color: #1F2739' ><thead><tr><th colspan='2'>Mestá</th><tr/></thead><tbody>";
 foreach ($town_visits as $town_visit){
-    echo "<td>$town_visit[1]</td>";
-    echo "<td>$town_visit[0]</td>";
+    echo "<tr><td>$town_visit[1]</td>";
+    echo "<td>$town_visit[0]</td></tr>";
 }
 echo "</tbody></table>";

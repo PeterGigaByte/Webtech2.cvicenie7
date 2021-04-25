@@ -13,10 +13,11 @@
     <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.2.14/dist/jBox.all.min.js"></script>
     <link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.2.14/dist/jBox.all.min.css" rel="stylesheet">
-    <script src="js/javascript.js"></script>
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="css/table.css">
     <link rel="icon" href="images/icon.png">
+    <script src="js/cookies.js"></script>
+    <script src="js/cook.js"></script>
 
 </head>
 <body>

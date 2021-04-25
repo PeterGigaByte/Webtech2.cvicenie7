@@ -13,6 +13,11 @@ $cityName =  $json->city;
 $gps = "latitude: " . $latitude . " " . "longitude: " . $longitude;
 $countryCode = $json->countryCode;
 
-$query = "INSERT INTO visitors (ip, site, dateTime, country, country_code, city)
-                        VALUES('$ipA','$site','$date','$country_name','$countryCode','$cityName')";
+if($cityName==null){
+    $cityName = "nelokalizované mesto";
+}
+
+
+$query = "INSERT INTO visitors (ip, site, dateTime, country, country_code, city,latitude,longitude)
+                        VALUES('$ipA','$site','$date','$country_name','$countryCode','$cityName','$latitude','$longitude')";
 mysqli_query($db, $query);
